@@ -1,0 +1,144 @@
+*  {
+  box-sizing: border-box;
+  font-family: Tinos, Helvetica, sans-serif;
+  color: #3C3B3D;
+}
+
+html, body  {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container  {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(#FFAFBD, #ffc3a0);
+  padding: 30px;
+}
+
+.title  {
+  font-family: Alice;
+  font-size: 54px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.subtitle  {
+  font-family: Tinos;
+  font-size: 24px;
+  color: #3C3B3D;
+  margin-top: 10px;
+}
+
+.button-area  {
+  align-self: center;
+  position: relative;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.button-area .output  {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.button-area .instruction  {
+  color: #3C3B3D;
+}
+
+.output .msg  {
+  width: 100%;
+  position: relative;
+  font-size: 32px;
+}
+
+#trigger.button-highlight  {
+  background-color: #00796B;
+  border-color: #00796B;
+}
+
+#trigger.button-3d.button-highlight  {
+  box-shadow: 0 7px 0 #004D40, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+#trigger.button-3d.button-highlight:hover  {
+  background-color: #00897B;
+}
+
+#trigger.button-3d.button-highlight:active  {
+  box-shadow: 0 2px 0 #004D40, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.footer p  {
+  display: inline-block;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (max-width: 767px)  {
+
+  .footer p  {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .output .msg  {
+    font-size: 20px;
+  }
+
+  .title  {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .subtitle  {
+    font-size: 18px;
+  }
+
+  .instruction  {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-height: 480px)  {
+
+  .output .msg  {
+    font-size: 18px;
+  }
+
+  .title  {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .subtitle  {
+    font-size: 16px;
+  }
+
+  .instruction  {
+    font-size: 16px;
+  }
+
+  .footer p  {
+    font-size: 12px;
+  }
+
+}
